@@ -1,0 +1,72 @@
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* Dark mode (optional) */
+//@import "@ionic/angular/css/palettes/dark.class.css";
+
+html, body, ion-app, app-root {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ion-content {
+  height: 100%;
+  min-height: 100%;
+}
+
+app-login, app-signup {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
+ion-input input {
+  background: #fafbfc !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 5px !important;
+  padding: 8px 12px !important;
+  font-size: 1rem;
+  box-shadow: none !important;
+}
+
+ion-input input:focus {
+  border: 1px solid #b3b3b3 !important;
+  background: #f5f7fa !important;
+  outline: none;
+}
+
+ion-item {
+  --background: transparent !important;
+  --highlight-background: #f5f7fa !important;
+}
+
+ion-label {
+  padding-block: 1em;
+}
+
+app-shared-header ion-title {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+
+//body { background: pink !important; }

@@ -1,0 +1,18 @@
+<ion-app id="main-content">
+  <app-shared-header [title]="'Topics'"></app-shared-header>
+  <router-outlet></router-outlet>
+
+  <!-- Existing content, only shown for authenticated users -->
+<!--  <div style="margin-bottom: 2rem;">-->
+<!--    <button *ngIf="user" (click)="logout()">Logout</button>-->
+<!--    <div *ngIf="user" style="margin-top: 1rem;">-->
+<!--      <strong>User:</strong> {{ user.displayName || user.email }}<br>-->
+<!--      <strong>Role:</strong> {{ role || 'none' }}-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <h1 *ngIf="user">Topics</h1>
+  <ul *ngIf="user">
+    <li *ngFor="let topic of topics">{{ topic.name }}</li>
+  </ul>
+</ion-app>
